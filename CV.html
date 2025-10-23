@@ -1,0 +1,170 @@
+<!-- FILE: jake-forsyth-cv.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jake Forsyth — Curriculum Vitae</title>
+  <meta name="description" content="CV of Jake Forsyth — Software Developer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-grid">
+      <div>
+        <h1 class="name">Jake Forsyth</h1>
+        <p class="role">Software Developer</p>
+      </div>
+      <div class="contact">
+        <p>📍 Manchester, UK</p>
+        <p>📞 +44 7XXX XXX XXX</p>
+        <p>✉️ jake.forsyth@email.com</p>
+        <p>🔗 <a href="#">linkedin.com/in/jakeforsyth</a></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="summary">
+      <h2>Personal Profile</h2>
+      <p>A motivated and detail-oriented <strong>Software Developer</strong> with practical experience in Java, Python and web development. Comfortable in Agile teams and focused on building efficient, user-centred applications. Proven ability to learn quickly and deliver reliable code under deadlines.</p>
+    </section>
+
+    <section class="two-col">
+      <div class="left">
+        <h3>Education</h3>
+        <div class="item">
+          <h4>BSc (Hons) Computer Science — University of Manchester</h4>
+          <p class="muted">2021 — 2024 (Predicted First-Class)</p>
+          <ul>
+            <li>Key modules: Data Structures & Algorithms, Software Engineering, Databases, Object-Oriented Programming</li>
+            <li>Final Project: Java-based inventory management system using Binary Trees and file persistence</li>
+          </ul>
+        </div>
+
+        <h3>Technical Skills</h3>
+        <ul class="skills">
+          <li><strong>Languages:</strong> Java, Python, C, JavaScript, SQL</li>
+          <li><strong>Web:</strong> HTML5, CSS3, React, Node.js</li>
+          <li><strong>Tools:</strong> Git, Docker, VS Code, IntelliJ</li>
+          <li><strong>Databases:</strong> MySQL, MongoDB</li>
+          <li><strong>Practices:</strong> Agile (Scrum), TDD, REST APIs</li>
+        </ul>
+
+        <h3>Certifications</h3>
+        <ul>
+          <li>Oracle Certified Associate, Java SE 8 Programmer (2024)</li>
+          <li>Cisco Networking Essentials (2023)</li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <h3>Professional Experience</h3>
+
+        <div class="job">
+          <h4>Junior Software Developer (Placement) — TechNova Solutions</h4>
+          <p class="muted">June 2023 — September 2023</p>
+          <ul>
+            <li>Developed and tested web applications using Java and Spring Boot.</li>
+            <li>Collaborated in a 5-person Agile team to design RESTful APIs improving scalability.</li>
+            <li>Implemented database queries and validation, reducing runtime errors by 30%.</li>
+            <li>Produced technical documentation to support deployment and maintenance.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h4>IT Support Assistant — University of Manchester IT Services</h4>
+          <p class="muted">October 2022 — April 2023 (Part-time)</p>
+          <ul>
+            <li>Provided technical support for software and hardware to students and staff.</li>
+            <li>Maintained inventory of 200+ campus devices and configured systems for labs.</li>
+            <li>Improved user satisfaction through clear communication and timely fixes.</li>
+          </ul>
+        </div>
+
+        <h3>Key Projects</h3>
+        <div class="project">
+          <h4>Lottery Game Application (Java)</h4>
+          <p>GUI-based lottery system using Java Collections and file I/O; implemented a leaderboard using Generics.</p>
+        </div>
+
+        <div class="project">
+          <h4>Shop Inventory Binary Tree System</h4>
+          <p>Binary Tree implementation for inventory management with search, deletion and traversal algorithms.</p>
+        </div>
+
+        <h3>Strengths</h3>
+        <ul>
+          <li>Analytical problem solving</li>
+          <li>Team collaboration & communication</li>
+          <li>Adaptability and quick learning</li>
+          <li>Attention to detail and testing discipline</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="references">
+      <h3>References</h3>
+      <p>Available on request</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Designed for web and print — Jake Forsyth CV</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+<!-- FILE: styles.css -->
+/* reset / base */
+*{box-sizing:border-box}
+:root{
+  --accent:#2563eb;
+  --muted:#6b7280;
+  --bg:#fbfbfd;
+  --card:#ffffff;
+  --max-width:900px;
+  --pad:20px;
+}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#111827}
+.container{max-width:var(--max-width);margin:0 auto;padding:var(--pad)}
+.header{background:linear-gradient(90deg, rgba(37,99,235,0.06), rgba(99,102,241,0.03));border-bottom:1px solid rgba(15,23,42,0.04)}
+.header-grid{display:flex;justify-content:space-between;align-items:center}
+.name{margin:10px 0 0;font-size:1.9rem;letter-spacing:-0.5px}
+.role{margin:6px 0 0;color:var(--muted);font-weight:600}
+.contact p{margin:4px 0;color:var(--muted)}
+.contact a{color:var(--accent);text-decoration:none}
+
+main{padding:28px 0}
+.summary{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.04);margin-bottom:18px}
+.summary h2{margin-top:0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.left,.right{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+.muted{color:var(--muted);font-size:0.95rem}
+.item h4{margin:6px 0}
+.skills{list-style:none;padding:0;margin:8px 0}
+.skills li{margin:6px 0}
+.job{margin-bottom:12px}
+.project{margin-bottom:12px}
+.references{margin-top:18px;text-align:center}
+.footer{border-top:1px solid rgba(15,23,42,0.04);padding:12px 0;margin-top:18px}
+
+/* Responsive / print */
+@media (max-width:800px){
+  .header-grid{flex-direction:column;align-items:flex-start}
+  .two-col{grid-template-columns:1fr}
+}
+@media print{
+  body{background:white}
+  .container{padding:0}
+  .header, .footer{display:none}
+  .left, .right, .summary{box-shadow:none;border-radius:0}
+}
+
+/* Small accessibility touches */
+a:focus{outline:2px dashed var(--accent);outline-offset:3px}
