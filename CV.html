@@ -16,9 +16,9 @@
         <p class="role">Software Developer</p>
       </div>
       <div class="contact">
-        <p>📍 Manchester, UK</p>
-        <p>📞 +44 7XXX XXX XXX</p>
-        <p>✉️ jake.forsyth@email.com</p>
+        <p>Dundee, UK</p>
+        <p>Mobile - +44 7XXX XXX XXX</p>
+        <p>Email - jake.forsyth@email.com</p>
         <p>🔗 <a href="#">linkedin.com/in/jakeforsyth</a></p>
       </div>
     </div>
@@ -120,51 +120,3 @@
 </html>
 
 
-<!-- FILE: styles.css -->
-/* reset / base */
-*{box-sizing:border-box}
-:root{
-  --accent:#2563eb;
-  --muted:#6b7280;
-  --bg:#fbfbfd;
-  --card:#ffffff;
-  --max-width:900px;
-  --pad:20px;
-}
-html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#111827}
-.container{max-width:var(--max-width);margin:0 auto;padding:var(--pad)}
-.header{background:linear-gradient(90deg, rgba(37,99,235,0.06), rgba(99,102,241,0.03));border-bottom:1px solid rgba(15,23,42,0.04)}
-.header-grid{display:flex;justify-content:space-between;align-items:center}
-.name{margin:10px 0 0;font-size:1.9rem;letter-spacing:-0.5px}
-.role{margin:6px 0 0;color:var(--muted);font-weight:600}
-.contact p{margin:4px 0;color:var(--muted)}
-.contact a{color:var(--accent);text-decoration:none}
-
-main{padding:28px 0}
-.summary{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.04);margin-bottom:18px}
-.summary h2{margin-top:0}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.left,.right{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
-.muted{color:var(--muted);font-size:0.95rem}
-.item h4{margin:6px 0}
-.skills{list-style:none;padding:0;margin:8px 0}
-.skills li{margin:6px 0}
-.job{margin-bottom:12px}
-.project{margin-bottom:12px}
-.references{margin-top:18px;text-align:center}
-.footer{border-top:1px solid rgba(15,23,42,0.04);padding:12px 0;margin-top:18px}
-
-/* Responsive / print */
-@media (max-width:800px){
-  .header-grid{flex-direction:column;align-items:flex-start}
-  .two-col{grid-template-columns:1fr}
-}
-@media print{
-  body{background:white}
-  .container{padding:0}
-  .header, .footer{display:none}
-  .left, .right, .summary{box-shadow:none;border-radius:0}
-}
-
-/* Small accessibility touches */
-a:focus{outline:2px dashed var(--accent);outline-offset:3px}
